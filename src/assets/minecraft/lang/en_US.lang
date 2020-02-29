@@ -1,0 +1,14 @@
+tile.melon.name=Cardboard
+
+tile.stoneSlab.netherBrick.name=Iron Slab
+tile.netherBrick.name=Nether Iron Block
+tile.netherFence.name=Iron Fence
+tile.stairsNetherBrick.name=Iron Stairs
+tile.stoneSlab.brick.name=Iron Brick Slab
+tile.brick.name=Iron Bricks
+tile.stairsBrick.name=Iron Brick Stairs
+
+tile.pumpkin.name=Hazmat Helmet
+item.goldChestplate.name=Hazmat Chestplate
+item.goldLeggings.name=Hazmat Leggings
+item.goldBoots.name=Hazmat Boots

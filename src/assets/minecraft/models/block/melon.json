@@ -1,0 +1,12 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "blocks/cardboard_top",
+	"bottom": "blocks/cardboard_bottom",
+	"front": "blocks/cardboard_front",
+        "side": "blocks/cardboard_side",
+
+	"south": "blocks/cardboard_front",
+	"down": "blocks/cardboard_bottom"
+    }
+}
