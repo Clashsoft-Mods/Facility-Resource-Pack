@@ -1,4 +1,4 @@
-version = '0.15.0'
+version = 'git describe --tags'.execute().text[1..-2] // strip v and \n
 
 tasks.register('copy', Sync) {
 	it.from 'src/'
