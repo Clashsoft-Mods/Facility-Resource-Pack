@@ -1,12 +1,11 @@
 {
-    "parent": "block/orientable",
-    "textures": {
-        "top": "blocks/cardboard_top",
-	"bottom": "blocks/cardboard_bottom",
-	"front": "blocks/cardboard_front",
-        "side": "blocks/cardboard_side",
-
-	"south": "blocks/cardboard_front",
-	"down": "blocks/cardboard_bottom"
-    }
+  "parent": "block/orientable",
+  "textures": {
+    "top": "block/cardboard_top",
+    "bottom": "block/cardboard_bottom",
+    "front": "block/cardboard_front",
+    "side": "block/cardboard_side",
+    "south": "block/cardboard_front",
+    "down": "block/cardboard_bottom"
+  }
 }
