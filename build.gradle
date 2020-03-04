@@ -1,24 +1,24 @@
 version = '0.15.0'
 
 tasks.register('copy', Sync) {
-	it.from 'src/'
-	it.into "$buildDir/src/"
+  it.from 'src/'
+  it.into "$buildDir/src/"
 
-	it.include '**/*.png', '**/*.mcmeta', '**/*.txt', '**/*.lang', '**/*.json'
+  it.include '**/*.png', '**/*.mcmeta', '**/*.txt', '**/*.lang', '**/*.json'
 
-	it.exclude '**/dev_*/**'
+  it.exclude '**/dev_*/**'
 
-	it.filesMatching('pack.mcmeta') {
-		filter {
-			return it.replace('$$version$$', project.version)
-		}
-	}
-}	
+  it.filesMatching('pack.mcmeta') {
+    filter {
+      return it.replace('$$version$$', project.version)
+    }
+  }
+}
 
 tasks.register('build', Zip) {
-	it.dependsOn 'copy'
+  it.dependsOn 'copy'
 
-	it.from "$buildDir/src/"
-	it.destinationDir = file("$buildDir/libs")
-	it.archiveName = "resources-${ project.version }.zip"
+  it.from "$buildDir/src/"
+  it.destinationDir = file("$buildDir/libs")
+  it.archiveName = "resources-${ project.version }.zip"
 }
