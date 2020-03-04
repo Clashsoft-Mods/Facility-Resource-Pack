@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "block/hazmat_helmet_side",
+        "front": "block/hazmat_helmet_face",
+        "side": "block/hazmat_helmet_side"
+    }
+}
