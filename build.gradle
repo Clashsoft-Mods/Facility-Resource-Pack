@@ -22,3 +22,10 @@ tasks.register('build', Zip) {
   it.destinationDir = file("$buildDir/libs")
   it.archiveName = "resources-${ project.version }.zip"
 }
+
+tasks.register('install', Copy) {
+  it.dependsOn 'build'
+
+  it.from "$buildDir/libs/resources-${ project.version }.zip"
+  it.into "/Users/adriankunz/ownCloud/Games/Minecraft/Current Version/resourcepacks"
+}
