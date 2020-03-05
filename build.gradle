@@ -4,7 +4,7 @@ tasks.register('copy', Sync) {
   it.from 'src/'
   it.into "$buildDir/src/"
 
-  it.include '**/*.png', '**/*.mcmeta', '**/*.txt', '**/*.lang', '**/*.json'
+  it.include '**/*.png', '**/*.mcmeta', '**/*.txt', '**/*.lang', '**/*.json', '**/*.ogg'
 
   it.exclude '**/dev_*/**'
 
